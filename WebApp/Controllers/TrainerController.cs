@@ -14,5 +14,5 @@ public class TrainerController(ITrainerService service):ControllerBase
     public async Task<Response<string>> Update(int id,UpdateTrainerDto trainer) => await service.UpdateTrainer(id,trainer);
     public async Task<Response<string>> Delete(int id) => await service.DeleteTrainer(id);
     public async Task<Response<Trainer>> GetbyId(int id) => await service.GetTrainerById(id);
-    public async Task<Response<List<Trainer>>> GetAll() => await service.GetAllTrainers();
+    public async Task<Response<List<GetTrainersDto>>> GetAll() => await service.GetAllTrainers();
 }

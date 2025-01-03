@@ -11,4 +11,5 @@ public interface IWorkoutSessionService
     public Task<Response<string>> UpdateStatus(int id,SessionStatus status);
     public Task<Response<string>> DeleteWorkoutSession(int id);
     public Task<Response<List<GetWorkoutSessionsDto>>> GetAllWorkoutSessions();
+
 }
